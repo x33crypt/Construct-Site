@@ -1,0 +1,118 @@
+.Projects {
+  padding-block: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(190, 246, 107);
+}
+
+.ProjectsTop {
+  display: flex;
+  column-gap: 100px;
+}
+
+.ProjectsTop1 {
+  position: relative;
+}
+
+.ProjectsTop1 i {
+  font-size: 300px;
+}
+
+#whiteProj {
+  color: white;
+}
+
+#whiteProjMain p {
+  color: black;
+}
+
+#whiteProjMain div {
+  background-color: black;
+}
+
+.ProjectsTop2 {
+  position: relative;
+}
+
+.ProjectsTop2 i {
+  font-size: 300px;
+  color: rgb(41, 45, 50);
+}
+
+.ProjectsButtom {
+  margin-top: 50px;
+}
+
+.ProjectsButtom1 {
+  position: relative;
+}
+
+.ProjectsButtom1Head {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+}
+
+.ProjectsButtom1 i {
+  font-size: 300px;
+  color: black;
+}
+
+.ProjectsButtom1Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ProjectsButtom1Main1 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  color: white;
+}
+
+.ProjectsButtom1Main2 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 30px;
+  color: white;
+}
+
+.ProjectsButtom1Main3 {
+  margin-top: 15px;
+  background-color: rgb(190, 246, 107);
+  width: 30px;
+  height: 0.5px;
+}
+
+.ProjectsButtom1Main4 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .ProjectsTop {
+    display: flex;
+    flex-direction: column;
+    column-gap: 100px;
+  }
+
+  .ProjectsButtom {
+    margin-top: 20px;
+  }
+}

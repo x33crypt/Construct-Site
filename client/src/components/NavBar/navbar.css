@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navBar {
+  display: flex;
+  padding-inline: 6%;
+  justify-content: space-between;
+  padding-block: 40px;
+  background-color: black;
+  align-items: center;
+}
+
+.navBarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navBarRight2 {
+  display: none;
+}
+
+.navBarLeft p {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: white;
+}
+
+.navBarLeft i {
+  font-size: 18px;
+  color: rgb(190, 246, 107);
+}
+
+.navBarRight {
+  display: flex;
+  width: 650px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navBarRight p {
+  font-size: 15px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 100;
+  color: white;
+  cursor: pointer;
+}
+
+.navBarRight p:hover {
+  color: rgb(207, 207, 207);
+}
+
+.navBarRight i {
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.navBarRight small {
+  position: absolute;
+  color: white;
+  top: -14px;
+  right: -15px;
+  font-family: "Archivo", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  color: black;
+  background-color: white;
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+
+.navOption {
+  display: none;
+}
+
+.navOptionClose {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navBarRight {
+    display: none;
+  }
+
+  .navBarRight2 {
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .fa-cart-shopping {
+    color: white;
+    font-size: 20px;
+  }
+
+  .navBarRight2a {
+    display: flex;
+  }
+
+  .navBarRight2aClose {
+    display: none;
+  }
+
+  .navBarRight2a i {
+    color: white;
+    font-size: 20px;
+  }
+
+  .navBarRight2 small {
+    position: absolute;
+    top: -15px;
+    right: 35px;
+    font-family: "Archivo", sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    color: black;
+    background-color: white;
+    padding: 2px 4px;
+    border-radius: 50%;
+  }
+
+  .navBarRight2b {
+    display: none;
+  }
+
+  .navBarRight2bClose {
+    display: flex;
+    transition: 1s ease;
+  }
+
+  .navBarRight2bClose i {
+    color: white;
+    font-size: 20px;
+  }
+
+  .navOption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 80px;
+    row-gap: 25px;
+    background-color: black;
+  }
+
+  .navOptionClose {
+    display: none;
+  }
+
+  .navOption p {
+    color: white;
+    font-family: "Archivo", sans-serif;
+    font-size: 25px;
+  }
+}
