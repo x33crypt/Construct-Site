@@ -36,7 +36,7 @@ const Footer = () => {
           <p>Challenges</p>
         </div>
       </div>
-      <div className="footerMid">
+      <div className="footerMid hiddenComp">
         <p>CONSTRUCT</p>
         <i class="fa-solid fa-screwdriver-wrench"></i>
       </div>

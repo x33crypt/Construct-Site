@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className="Projects">
       <div className="ProjectsTop">
-        <div className="ProjectsTop1">
+        <div className="ProjectsTop1 hiddenComp">
           <p className="ProjectsButtom1Head">RESIDENTIAL</p>
           <i id="whiteProj" class="fa-solid fa-folder fa-flip-horizontal"></i>
           <div id="whiteProjMain" className="ProjectsButtom1Main">
@@ -17,7 +17,7 @@ const Projects = () => {
             </p>
           </div>
         </div>
-        <div className="ProjectsTop2">
+        <div className="ProjectsTop2 hiddenComp">
           <div className="ProjectsTop2">
             <p className="ProjectsButtom1Head">COMMERCIAL</p>
             <i class="fa-solid fa-folder fa-flip-horizontal"></i>
@@ -32,7 +32,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="ProjectsButtom">
+      <div className="ProjectsButtom hiddenComp">
         <div className="ProjectsButtom1">
           <p className="ProjectsButtom1Head">RENOVATION</p>
           <i class="fa-solid fa-folder fa-flip-horizontal"></i>
@@ -41,7 +41,7 @@ const Projects = () => {
             <p className="ProjectsButtom1Main2">Projects</p>
             <div className="ProjectsButtom1Main3"></div>
             <p className="ProjectsButtom1Main4">
-            173 homes successful renovations and counting.
+              173 homes successful renovations and counting.
             </p>
           </div>
         </div>

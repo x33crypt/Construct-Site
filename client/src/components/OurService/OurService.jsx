@@ -18,7 +18,7 @@ const OurService = () => {
   return (
     <div className="ourService">
       <div className="ourServiceHead">
-        <p className="ourServiceHeadLeft">
+        <p className="ourServiceHeadLeft hiddenComp">
           Our <small>Services</small>
         </p>
         <div className="ourServiceHeadRight">
@@ -27,7 +27,7 @@ const OurService = () => {
         </div>
       </div>
       <div className="ourServiceMain">
-        <div className="ourServiceMain1">
+        <div className="ourServiceMain1 hiddenComp">
           <div className="ourServiceMain1Up">
             <p className="ourServiceMain1Up-a">Residential</p>
             <div className="ourServiceMain1Up-b"></div>
@@ -41,11 +41,11 @@ const OurService = () => {
           </div>
         </div>
         <div className="ourServiceMain2">
-          <div className="ourServiceMain2Up">
+          <div className="ourServiceMain2Up hiddenComp">
             <img src={homeImage3} alt="" />
           </div>
           <div
-            className="ourServiceMain2Upp"
+            className="ourServiceMain2Upp hiddenComp"
             onMouseEnter={() => setCondoPlusIcon(true)}
             onMouseLeave={() => setCondoPlusIcon(false)}
           >
@@ -66,11 +66,11 @@ const OurService = () => {
               <i class="fa-solid fa-plus"></i>
             </div>
           </div>
-          <div className="ourServiceMain2Upp4">
+          <div className="ourServiceMain2Upp4 hiddenComp">
             <p>Our skilled craftsmen specialize in residential construction.</p>
           </div>
         </div>
-        <div className="ourServiceMain3">
+        <div className="ourServiceMain3 hiddenComp">
           <div className="ourServiceMain3Up">
             <p className="ourServiceMain3Up-a">Commercial</p>
             <div className="ourServiceMain3Up-b"></div>
@@ -84,11 +84,11 @@ const OurService = () => {
           </div>
         </div>
         <div className="ourServiceMain4">
-          <div className="ourServiceMain4Up">
+          <div className="ourServiceMain4Up hiddenComp">
             <img src={homeImage5} alt="" />
           </div>
           <div
-            className="ourServiceMain4Upp"
+            className="ourServiceMain4Upp hiddenComp"
             onMouseEnter={() => setMallPlusIcon(true)}
             onMouseLeave={() => setMallPlusIcon(false)}
           >
@@ -109,11 +109,11 @@ const OurService = () => {
               <i class="fa-solid fa-plus"></i>
             </div>
           </div>
-          <div className="ourServiceMain4Upp4">
+          <div className="ourServiceMain4Upp4 hiddenComp">
             <p>We are the ideal choice for commercial construction.</p>
           </div>
         </div>
-        <div className="ourServiceMain5">
+        <div className="ourServiceMain5 hiddenComp">
           <div className="ourServiceMain5Up">
             <p className="ourServiceMain5Up-a">Renovation</p>
             <div className="ourServiceMain5Up-b"></div>
@@ -127,11 +127,11 @@ const OurService = () => {
           </div>
         </div>
         <div className="ourServiceMain6">
-          <div className="ourServiceMain6Up">
+          <div className="ourServiceMain6Up hiddenComp">
             <img src={homeImage10} alt="" />
           </div>
           <div
-            className="ourServiceMain6Upp"
+            className="ourServiceMain6Upp hiddenComp"
             onMouseEnter={() => setInteriorPlusIcon(true)}
             onMouseLeave={() => setInteriorPlusIcon(false)}
           >
@@ -154,7 +154,7 @@ const OurService = () => {
               <i class="fa-solid fa-plus"></i>
             </div>
           </div>
-          <div className="ourServiceMain6Upp4">
+          <div className="ourServiceMain6Upp4 hiddenComp">
             <p>We specialize in breathing new life into existing spaces.</p>
           </div>
         </div>

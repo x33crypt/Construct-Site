@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./blog.css";
 import blogImage1 from "../../assets/blogImage1.jpg";
 import blogImage2 from "../../assets/blogImage2.jpg";
@@ -11,6 +11,30 @@ const Blog = () => {
   const [researchPlusIcon, setResearchPlusIcon] = useState(false);
   const [safetyPlusIcon, setSafetyPlusIcon] = useState(false);
   const [envPlusIcon, setEvnPlusIcon] = useState(false);
+
+  useEffect(() => {
+    if (!("IntersectionObserver" in window)) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("showComp");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const hiddenElements = document.querySelectorAll(".hiddenComp");
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
 
   return (
     <div className="blog">
@@ -26,7 +50,7 @@ const Blog = () => {
       <div className="blogMain">
         <div className="ourBlogMain1">
           <div
-            className="blogMain1a"
+            className="blogMain1a hiddenComp"
             onMouseEnter={() => setResearchPlusIcon(true)}
             onMouseLeave={() => setResearchPlusIcon(false)}
           >
@@ -53,7 +77,7 @@ const Blog = () => {
             <p className="blogMain1a3">Choosing the Right Contractor</p>
           </div>
           <div
-            className="blogMain1a"
+            className="blogMain1a hiddenComp"
             onMouseEnter={() => setSafetyPlusIcon(true)}
             onMouseLeave={() => setSafetyPlusIcon(false)}
           >
@@ -82,7 +106,7 @@ const Blog = () => {
         </div>
         <div className="blogMain2">
           <div
-            className="blogMain1a"
+            className="blogMain1a hiddenComp"
             onMouseEnter={() => setEvnPlusIcon(true)}
             onMouseLeave={() => setEvnPlusIcon(false)}
           >

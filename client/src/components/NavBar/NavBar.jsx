@@ -16,13 +16,12 @@ const NavBar = () => {
           <Link to={"/"}>
             <p>HOME</p>
           </Link>
-          <p>ABOUT</p>
-          <p>SERVICES</p>
-          <p>PROJECTS</p>
+          <Link to={"/service"}>
+            <p>SERVICE</p>
+          </Link>
           <Link to={"/blog"}>
             <p>BLOG</p>
           </Link>
-          <p>CONTACT</p>
           <i class="fa-solid fa-cart-shopping"></i>
           <small>0</small>
         </div>

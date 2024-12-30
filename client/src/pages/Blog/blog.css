@@ -1,6 +1,6 @@
 .blog {
   padding-block: 70px;
-  padding-inline: 9%;
+  padding-inline: 12%;
   background-color: rgb(238, 238, 238);
 }
 
@@ -47,7 +47,7 @@
 
 .blogMain {
   margin-top: 70px;
-  padding-inline: 14%;
+  padding-inline: 11%;
   display: flex;
   flex-direction: column;
   row-gap: 50px;
@@ -245,6 +245,17 @@
   justify-content: space-between;
   justify-content: center;
   width: 100%;
+}
+
+.hiddenComp {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.showComp {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 600px) {

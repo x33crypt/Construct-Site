@@ -10,6 +10,17 @@
   align-items: center;
 }
 
+.hiddenComp {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.showComp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .heroUp1 {
   font-family: "Archivo", sans-serif;
   font-weight: 800;
@@ -44,7 +55,6 @@
   font-family: "Archivo", sans-serif;
   font-weight: 800;
   font-size: 65px;
-  color: black;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
   background-color: black;
@@ -64,6 +74,7 @@
   height: 730px;
   object-fit: cover;
   border-radius: 25px;
+  transition: ease-in-out;
 }
 
 .heroDownIcon {
@@ -81,6 +92,7 @@
   padding: 40px 50px;
   border-radius: 50%;
   background-color: rgb(190, 246, 107);
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {

@@ -6,6 +6,8 @@ import blogImage3 from "../../assets/blogImage3.jpg";
 import blogImage4 from "../../assets/blogImage4.jpg";
 import blogImage5 from "../../assets/blogImage5.jpg";
 import blogImage6 from "../../assets/blogImage6.jpg";
+import blogImage7 from "../../assets/homeImage3.jpg";
+
 import { MdArrowOutward } from "react-icons/md";
 
 const OurBlog = () => {
@@ -17,7 +19,7 @@ const OurBlog = () => {
     <div className="ourBlogg">
       <div className="ourBlog">
         <div className="ourBlogHead">
-          <p className="ourBlogHeadLeft">
+          <p className="ourBlogHeadLeft hiddenComp">
             Our <small>Blog</small>
           </p>
           <div className="ourBlogHeadRight">
@@ -28,7 +30,7 @@ const OurBlog = () => {
         <div className="ourBlogMain">
           <div className="ourBlogMain1">
             <div
-              className="ourBlogMain1a"
+              className="ourBlogMain1a hiddenComp"
               onMouseEnter={() => setResearchPlusIcon(true)}
               onMouseLeave={() => setResearchPlusIcon(false)}
             >
@@ -57,7 +59,7 @@ const OurBlog = () => {
               <p className="ourBlogMain1a3">Choosing the Right Contractor</p>
             </div>
             <div
-              className="ourBlogMain1a"
+              className="ourBlogMain1a hiddenComp"
               onMouseEnter={() => setSafetyPlusIcon(true)}
               onMouseLeave={() => setSafetyPlusIcon(false)}
             >
@@ -88,7 +90,7 @@ const OurBlog = () => {
               </p>
             </div>
           </div>
-          <div className="ourBlogMain2">
+          <div className="ourBlogMain2 hiddenComp">
             <div
               className="ourBlogMain1a"
               onMouseEnter={() => setEvnPlusIcon(true)}
@@ -131,6 +133,7 @@ const OurBlog = () => {
           <button className="ourBlogMidMain3">
             GET IN TOUCH <MdArrowOutward className="buttonIcon" />
           </button>
+          <div className="ourBlogMidMain4"></div>
         </div>
       </div>
       <div className="ourBlogButtom"></div>
