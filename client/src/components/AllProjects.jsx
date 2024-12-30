@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./allprojects.css";
-import projectHeadImg from "../../assets/homeImage9.jpg";
+import projectHeadImg from "../assets/homeImage9.jpg";
 
 const AllProjects = () => {
   useEffect(() => {

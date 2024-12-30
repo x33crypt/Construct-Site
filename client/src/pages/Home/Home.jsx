@@ -1,10 +1,10 @@
 import React from "react";
 import "./home.css";
-import Hero from "../../components/hero/Hero";
-import Projects from "../../components/projects/Projects";
-import OurService from "../../components/ourService/OurService";
-import AllProjects from "../../components/allProjects/AllProjects";
-import OurBlog from "../../components/ourBlog/OurBlog";
+import Hero from "../../components/Hero";
+import Projects from "../../components/Projects";
+import OurService from "../../components/OurService";
+import AllProjects from "../../components/AllProjects";
+import OurBlog from "../../components/OurBlog";
 
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./hero.css";
-import Image1 from "../../assets/heroImage1.jpg";
-import Image2 from "../../assets/homeImage9.jpg";
+import Image1 from "../assets/heroImage1.jpg";
+import Image2 from "../assets/homeImage9.jpg";
 
 const Hero = () => {
   const [heroImage, setHeroImage] = useState(false);

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./ourservice.css";
-import homeImage2 from "../../assets/homeImage2.jpg";
-import homeImage3 from "../../assets/homeImage3.jpg";
-import homeImage4 from "../../assets/imageHome4.svg";
-import homeImage5 from "../../assets/homeImage5.jpg";
-import homeImage6 from "../../assets/homeImage6.jpg";
-import homeImage7 from "../../assets/homeImage7.jpg";
-import homeImage8 from "../../assets/imageHome5.svg";
-import homeImage9 from "../../assets/imageHome6.svg";
-import homeImage10 from "../../assets/homeImage8.jpg";
+import homeImage2 from "../assets/homeImage2.jpg";
+import homeImage3 from "../assets/homeImage3.jpg";
+import homeImage4 from "../assets/imageHome4.svg";
+import homeImage5 from "../assets/homeImage5.jpg";
+import homeImage6 from "../assets/homeImage6.jpg";
+import homeImage7 from "../assets/homeImage7.jpg";
+import homeImage8 from "../assets/imageHome5.svg";
+import homeImage9 from "../assets/imageHome6.svg";
+import homeImage10 from "../assets/homeImage8.jpg";
 
 const OurService = () => {
   const [condoPlusIcon, setCondoPlusIcon] = useState(false);
