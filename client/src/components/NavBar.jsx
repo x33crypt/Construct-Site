@@ -22,6 +22,15 @@ const NavBar = () => {
           <Link to={"/blog"}>
             <p>BLOG</p>
           </Link>
+          <Link to={"/blog"}>
+            <p>PROJECT</p>
+          </Link>
+          <Link to={"/blog"}>
+            <p>SHOP</p>
+          </Link>{" "}
+          <Link to={"/blog"}>
+            <p>CONTACT</p>
+          </Link>{" "}
           <i class="fa-solid fa-cart-shopping"></i>
           <small>0</small>
         </div>
