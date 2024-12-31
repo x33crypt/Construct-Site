@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 import "./allprojects.css";
 import projectHeadImg from "../assets/homeImage9.jpg";
+import allproject1 from "../assets/allproject1.jpg";
+import allproject2 from "../assets/allproject2.jpg";
+import allproject3 from "../assets/allproject3.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/bundle";
+import { Navigation, Pagination } from "swiper/modules";
 
 const AllProjects = () => {
   useEffect(() => {
@@ -27,6 +33,16 @@ const AllProjects = () => {
     };
   }, []);
 
+  const Projects = [
+    { name: "Condo", details: "A contemporary home.", image: allproject1 },
+    {
+      name: "Mall",
+      details: "A modern retail destination.",
+      image: allproject3,
+    },
+    { name: "Resort", details: "A touch of paradise.", image: allproject2 },
+  ];
+
   return (
     <div className="allProjects">
       <div className="allProjectsUp">
@@ -43,7 +59,40 @@ const AllProjects = () => {
           </p>
         </div>
       </div>
-      <div className="allProjectsDown"></div>
+      <div className="allProjectsDown">
+        <Swiper
+          className="swipper-Main"
+          breakpoints={{
+            0: {
+              slidesPerView: 1.5,
+            },
+
+            1024: {
+              slidesPerView: 2.5,
+            },
+          }}
+          modules={[Navigation]}
+          navigation
+          spaceBetween={0} // Distinctive space between cards
+          // One card in view + part of the next card
+          pagination={false} // Disable pagination dots
+          loop={true} // Enables looping
+          slidesOffsetBefore={80} // Padding before the first slide
+          slidesOffsetAfter={50} // Padding after the last slide
+        >
+          {Projects.map((project, index) => (
+            <SwiperSlide className="swiper-wrapper" key={index}>
+              <div className="allProjectsDown1">
+                <div className="allProjectsDown1a">
+                  <p className="allProjectsDown1a1">{project.name}</p>
+                  <p className="allProjectsDown1a2">{project.details}</p>
+                </div>
+                <img src={project.image} alt={project.name} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Image2 from "../assets/homeImage9.jpg";
 
 const Hero = () => {
   const [heroImage, setHeroImage] = useState(false);
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
     if (!("IntersectionObserver" in window)) {
@@ -30,6 +31,14 @@ const Hero = () => {
     };
   }, []);
 
+  const toggleImage = () => {
+    setFade(true); // Trigger fade-out
+    setTimeout(() => {
+      setHeroImage(!heroImage); // Change the image
+      setFade(false); // Trigger fade-in
+    }, 500); // Match the CSS transition duration
+  };
+
   return (
     <div className="hero hiddenComp">
       <div className="heroUp ">
@@ -46,16 +55,14 @@ const Hero = () => {
         </div>
       </div>
       <div className="heroDown">
-        <img src={heroImage ? Image1 : Image2} />
+        <img
+          src={heroImage ? Image1 : Image2}
+          className={`heroImage ${fade ? "fade-out" : "fade-in"}`}
+          alt="Hero"
+        />
         <div className="heroDownIcon">
-          <i
-            onClick={() => setHeroImage(!heroImage)}
-            class="fa-solid fa-angle-left"
-          ></i>
-          <i
-            onClick={() => setHeroImage(!heroImage)}
-            class="fa-solid fa-angle-right"
-          ></i>
+          <i onClick={toggleImage} className="fa-solid fa-angle-left"></i>
+          <i onClick={toggleImage} className="fa-solid fa-angle-right"></i>
         </div>
       </div>
     </div>
