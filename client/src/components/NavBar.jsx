@@ -64,7 +64,7 @@ const NavBar = () => {
           <p>BLOG</p>
           <p>CONTACT</p>
         </div>
-        <div className="navOption2">
+        {/* <div className="navOption2">
           <p className="navOption2Buttom1">
             © {currentYear} Constructs. All Rights Reserved.
           </p>
@@ -73,7 +73,7 @@ const NavBar = () => {
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-linkedin"></i>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
