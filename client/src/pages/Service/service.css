@@ -121,21 +121,36 @@
 @media (max-width: 600px) {
   .service {
     padding-block: 50px;
+    padding-inline: 6%;
   }
 
   .serviceHead {
     flex-direction: column;
   }
 
+  .serviceHeadLeft {
+    font-size: 35px;
+    margin-right: 0px;
+  }
+
+  .serviceHeadLeft small {
+    font-size: 35px;
+  }
+
   .serviceHeadRight {
-    margin-top: 30px;
+    margin-top: 15px;
     row-gap: 15px;
     align-items: center;
   }
 
   .serviceHeadRight p {
-    font-size: 17px;
+    font-size: 15px;
     text-align: center;
+    line-height: 20px;
+  }
+
+  .serviceMain {
+    padding-top: 60px;
   }
 
   .serviceMain1 {
@@ -146,7 +161,7 @@
 
   .serviceMain1a {
     background-color: rgb(41, 45, 50);
-    height: 380px;
+    height: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
@@ -159,7 +174,7 @@
 
   .serviceMain1a1 {
     font-family: "Archivo", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1.5px;
     color: rgb(190, 246, 107);
   }
@@ -167,7 +182,7 @@
   .serviceMain1a2 {
     margin-top: 15px;
     font-family: "Archivo", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     color: white;
   }
@@ -175,7 +190,7 @@
   .serviceMain1a3 {
     margin-top: 10px;
     font-family: "Archivo", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1.5px;
     color: white;
     width: 210px;
@@ -189,7 +204,7 @@
     font-size: 15px;
     font-weight: 500;
     background-color: rgb(190, 246, 107);
-    padding: 20px 35px;
+    padding: 18px 30px;
     letter-spacing: 1.5px;
   }
 

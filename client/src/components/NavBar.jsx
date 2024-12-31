@@ -57,12 +57,24 @@ const NavBar = () => {
       </div>
       <div className={navOption ? "navOption" : "navOptionClose"}>
         <div className="navOption1">
-          <p>HOME</p>
-          <p>ABOUT</p>
-          <p>SERVICE</p>
-          <p>PROJECTS</p>
-          <p>BLOG</p>
-          <p>CONTACT</p>
+          <Link to={"/"} onClick={() => setNavOption(false)}>
+            <p>HOME</p>
+          </Link>
+          <Link to={"/service"} onClick={() => setNavOption(false)}>
+            <p>SERVICE</p>
+          </Link>
+          <Link to={"/blog"} onClick={() => setNavOption(false)}>
+            <p>BLOG</p>
+          </Link>
+          <Link to={"/blog"}>
+            <p>PROJECT</p>
+          </Link>
+          <Link to={"/blog"}>
+            <p>SHOP</p>
+          </Link>{" "}
+          <Link to={"/blog"}>
+            <p>CONTACT</p>
+          </Link>{" "}
         </div>
         {/* <div className="navOption2">
           <p className="navOption2Buttom1">
