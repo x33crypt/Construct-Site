@@ -1,12 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./footer.css";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  useEffect(() => {
+    if (!("IntersectionObserver" in window)) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("showComp");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const hiddenElements = document.querySelectorAll(".hiddenComp");
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <div className="footer">
-      <div className="footerTop">
+      <div className="footerTop hiddenComp">
         <div className="footerTop1">
           <p>CONSTRUCT</p>
           <i class="fa-solid fa-screwdriver-wrench"></i>

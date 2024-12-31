@@ -39,8 +39,8 @@ const Service = () => {
           <p>Expert solutions for all your construction needs.</p>
         </div>
       </div>
-      <div className="serviceMain">
-        <div className="serviceMain1 hiddenComp">
+      <div className="serviceMain hiddenComp">
+        <div className="serviceMain1">
           <div className="serviceMain1a">
             <p className="serviceMain1a1">HOME</p>
             <p className="serviceMain1a2">Residential</p>
@@ -53,7 +53,7 @@ const Service = () => {
             <img src={serviceImg1} alt="" />
           </div>
         </div>
-        <div className="serviceMain1 hiddenComp">
+        <div className="serviceMain1">
           <div className="serviceMain1a">
             <p className="serviceMain1a1">BUSINESS</p>
             <p className="serviceMain1a2">Commercial</p>
@@ -66,7 +66,7 @@ const Service = () => {
             <img src={serviceImg2} alt="" />
           </div>
         </div>
-        <div className="serviceMain1 hiddenComp">
+        <div className="serviceMain1">
           <div className="serviceMain1a">
             <p className="serviceMain1a1">UPGRADE</p>
             <p className="serviceMain1a2">Renovation</p>
