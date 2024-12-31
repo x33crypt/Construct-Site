@@ -161,9 +161,12 @@
   .navOption {
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
+    background-color: black;
     z-index: 3;
     position: absolute;
+    justify-content: space-between;
+    padding-block: 30px;
+    height: 100%;
     top: 80px;
     right: 0;
     left: 0;
@@ -179,7 +182,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-block: 50px;
+    padding-block: 20px;
     gap: 20px;
   }
 
@@ -216,6 +219,7 @@
   }
 
   .navOption2Buttom2 i {
-    font-size: 15px;
+    font-size: 18px;
+    color: white;
   }
 }
