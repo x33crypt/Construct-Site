@@ -42,6 +42,10 @@
   cursor: pointer;
 }
 
+.footerTop2 p:hover {
+  color: rgb(190, 246, 107);
+}
+
 .footerMid {
   display: flex;
   padding-block: 50px;
