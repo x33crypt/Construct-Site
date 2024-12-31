@@ -124,6 +124,10 @@
     font-size: 12px;
   }
 
+  .footerTop2 {
+    row-gap: 30px;
+  }
+
   .footerButtom2 {
     width: 80px;
   }

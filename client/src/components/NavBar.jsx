@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [navOption, setNavOption] = useState(false);
+  const currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -55,12 +56,24 @@ const NavBar = () => {
         </div>
       </div>
       <div className={navOption ? "navOption" : "navOptionClose"}>
-        <p>HOME</p>
-        <p>ABOUT</p>
-        <p>SERVICE</p>
-        <p>PROJECTS</p>
-        <p>BLOG</p>
-        <p>CONTACT</p>
+        <div className="navOption1">
+          <p>HOME</p>
+          <p>ABOUT</p>
+          <p>SERVICE</p>
+          <p>PROJECTS</p>
+          <p>BLOG</p>
+          <p>CONTACT</p>
+        </div>
+        <div className="navOption2">
+          <p className="navOption2Buttom1">
+            © {currentYear} Constructs. All Rights Reserved.
+          </p>
+          <div className="navOption2Buttom2">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
       </div>
     </>
   );

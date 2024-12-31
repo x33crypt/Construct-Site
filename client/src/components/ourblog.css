@@ -267,7 +267,7 @@
 
 .ourBlogMidMain {
   background-color: rgb(159, 228, 244);
-  width: 100%;
+  width: 730px;
   height: 100%;
   border-radius: 20px;
   padding-top: 60px;
@@ -301,7 +301,7 @@
   letter-spacing: 1px;
   width: 500px;
   text-align: center;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .ourBlogMidMain3 {
