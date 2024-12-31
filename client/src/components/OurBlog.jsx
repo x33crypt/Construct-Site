@@ -6,8 +6,6 @@ import blogImage3 from "./../assets/blogImage3.jpg";
 import blogImage4 from "./../assets/blogImage4.jpg";
 import blogImage5 from "./../assets/blogImage5.jpg";
 import blogImage6 from "./../assets/blogImage6.jpg";
-import blogImage7 from "./../assets/homeImage3.jpg";
-
 import { MdArrowOutward } from "react-icons/md";
 
 const OurBlog = () => {

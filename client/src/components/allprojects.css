@@ -84,4 +84,33 @@
 }
 
 @media (max-width: 600px) {
+  .allProjects {
+    margin-top: 80px;
+  }
+
+  .allProjectsUp {
+    height: 280px;
+    position: relative;
+  }
+
+  .allProjectsUpMain1 {
+    font-size: 40px;
+  }
+
+  .allProjectsUpMain1 small {
+    font-size: 40px;
+  }
+
+  .allProjectsUpMain2 {
+    font-size: 14px;
+  }
+
+  .allProjectsUpMain3 {
+    font-size: 15px;
+  }
+
+  .allProjectsDown {
+    height: 350px;
+    background-color: rgb(190, 246, 107);
+  }
 }

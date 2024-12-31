@@ -67,6 +67,7 @@
   padding-block: 20px;
   display: flex;
   justify-content: space-between;
+  padding-block: 35px;
 }
 
 .footerButtom1 {
@@ -108,11 +109,11 @@
   }
 
   .footerMid p {
-    font-size: 48px;
+    font-size: 35px;
   }
 
   .footerMid i {
-    font-size: 48px;
+    font-size: 35px;
   }
 
   .footerButtom {
