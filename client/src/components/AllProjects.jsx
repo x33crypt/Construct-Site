@@ -64,7 +64,7 @@ const AllProjects = () => {
           className="swipper-Main"
           breakpoints={{
             0: {
-              slidesPerView: 1,
+              slidesPerView: 1.2,
             },
 
             1024: {
