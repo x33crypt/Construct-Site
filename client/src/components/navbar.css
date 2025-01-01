@@ -99,6 +99,14 @@
     padding-block: 35px;
   }
 
+  .navBarLeft p {
+    font-size: 20px;
+  }
+
+  .navBarLeft i {
+    font-size: 20px;
+  }
+
   .navBarRight {
     display: none;
   }
