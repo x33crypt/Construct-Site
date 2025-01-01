@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
 import Blog from "./pages/Blog/Blog";
 import Service from "./pages/Service/Service";
+import Intro from "./components/Intro";
 
 const App = () => {
   useEffect(() => {
@@ -33,6 +34,7 @@ const App = () => {
 
   return (
     <>
+      {/* <Intro /> */}
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

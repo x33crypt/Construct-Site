@@ -79,7 +79,7 @@
 }
 
 .heroImage.fade-out {
-  opacity: 0.1;
+  opacity: 0;
 }
 
 .heroImage.fade-in {

@@ -30,7 +30,7 @@ const Service = () => {
   }, []);
   return (
     <div className="service">
-      <div className="serviceHead">
+      <div className="serviceHead hiddenComp">
         <p className="serviceHeadLeft">
           Our <small>Services</small>
         </p>
@@ -39,7 +39,7 @@ const Service = () => {
           <p>Expert solutions for all your construction needs.</p>
         </div>
       </div>
-      <div className="serviceMain">
+      <div className="serviceMain hiddenComp">
         <div className="serviceMain1">
           <div className="serviceMain1a">
             <p className="serviceMain1a1">HOME</p>

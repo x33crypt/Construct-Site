@@ -38,7 +38,7 @@ const Blog = () => {
 
   return (
     <div className="blog">
-      <div className="blogHead">
+      <div className="blogHead hiddenComp">
         <p className="blogHeadLeft">
           Our <small>Blog</small>
         </p>

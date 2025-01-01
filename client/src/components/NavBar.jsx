@@ -21,10 +21,10 @@ const NavBar = () => {
             <p>SERVICE</p>
           </Link>
           <Link to={"/blog"}>
-            <p>BLOG</p>
+            <p>PROJECT</p>
           </Link>
           <Link to={"/blog"}>
-            <p>PROJECT</p>
+            <p>BLOG</p>
           </Link>
           <Link to={"/blog"}>
             <p>SHOP</p>
@@ -63,11 +63,11 @@ const NavBar = () => {
           <Link to={"/service"} onClick={() => setNavOption(false)}>
             <p>SERVICE</p>
           </Link>
-          <Link to={"/blog"} onClick={() => setNavOption(false)}>
-            <p>BLOG</p>
-          </Link>
           <Link to={"/blog"}>
             <p>PROJECT</p>
+          </Link>
+          <Link to={"/blog"} onClick={() => setNavOption(false)}>
+            <p>BLOG</p>
           </Link>
           <Link to={"/blog"}>
             <p>SHOP</p>
