@@ -64,21 +64,20 @@ const AllProjects = () => {
           className="swipper-Main"
           breakpoints={{
             0: {
-              slidesPerView: 1.2,
+              slidesPerView: 1,
+              slidesOffsetBefore: 25, // Padding before the first slide
+              slidesOffsetAfter: 50, // Padding after the last slide
             },
-
             1024: {
               slidesPerView: 2.5,
+              slidesOffsetBefore: 80, // Padding before the first slide
+              slidesOffsetAfter: 50, // Padding after the last slide
             },
           }}
           modules={[Navigation]}
           navigation
-          spaceBetween={0} // Distinctive space between cards
-          // One card in view + part of the next card
           pagination={false} // Disable pagination dots
           loop={true} // Enables looping
-          slidesOffsetBefore={80} // Padding before the first slide
-          slidesOffsetAfter={50} // Padding after the last slide
         >
           {Projects.map((project, index) => (
             <SwiperSlide className="swiper-wrapper" key={index}>
@@ -91,6 +90,7 @@ const AllProjects = () => {
               </div>
             </SwiperSlide>
           ))}
+          }
         </Swiper>
       </div>
     </div>
