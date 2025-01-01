@@ -90,7 +90,6 @@ const AllProjects = () => {
               </div>
             </SwiperSlide>
           ))}
-          }
         </Swiper>
       </div>
     </div>

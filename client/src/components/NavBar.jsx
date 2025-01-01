@@ -21,17 +21,11 @@ const NavBar = () => {
             <p>SERVICE</p>
           </Link>
           <Link to={"/blog"}>
-            <p>PROJECT</p>
-          </Link>
-          <Link to={"/blog"}>
             <p>BLOG</p>
           </Link>
-          <Link to={"/blog"}>
-            <p>SHOP</p>
-          </Link>{" "}
-          <Link to={"/blog"}>
-            <p>CONTACT</p>
-          </Link>{" "}
+          <p>PROJECT</p>
+          <p>SHOP</p>
+          <p>CONTACT</p>
           <i class="fa-solid fa-cart-shopping"></i>
           <small>0</small>
         </div>
@@ -63,18 +57,12 @@ const NavBar = () => {
           <Link to={"/service"} onClick={() => setNavOption(false)}>
             <p>SERVICE</p>
           </Link>
-          <Link to={"/blog"}>
-            <p>PROJECT</p>
-          </Link>
           <Link to={"/blog"} onClick={() => setNavOption(false)}>
             <p>BLOG</p>
           </Link>
-          <Link to={"/blog"}>
-            <p>SHOP</p>
-          </Link>{" "}
-          <Link to={"/blog"}>
-            <p>CONTACT</p>
-          </Link>{" "}
+          <p onClick={() => setNavOption(false)}>PROJECT</p>
+          <p onClick={() => setNavOption(false)}>SHOP</p>
+          <p onClick={() => setNavOption(false)}>CONTACT</p>
         </div>
         {/* <div className="navOption2">
           <p className="navOption2Buttom1">
